@@ -49,7 +49,8 @@ function FormContainer() {
       let number = mobileNumber.replace(/[^\w\s]/gi, "").replace(/ /g, "");
 
       // Appending the phone number to the URL
-      let url = `https://web.whatsapp.com/send?phone=${number}`;
+     // let url = `https://web.whatsapp.com/send?phone=${number}`;
+      let url = `https://wa.me/${number}?`;
 
       // Appending the message to the URL by encoding it
       url += `&text=${encodeURI(message)}&app_absent=0`;
